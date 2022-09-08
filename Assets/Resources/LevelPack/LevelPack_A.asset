@@ -16,8 +16,9 @@ MonoBehaviour:
   packName: Level Pack A
   price: 100
   listLevelDataIds:
-  - A1
-  - A2
-  - A3
-  - A4
-  - A5
+    items:
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5

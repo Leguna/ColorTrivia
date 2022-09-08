@@ -16,8 +16,9 @@ MonoBehaviour:
   packName: Level Pack C
   price: 100
   listLevelDataIds:
-  - C1
-  - C2
-  - C3
-  - C4
-  - C5
+    items:
+    - C1
+    - C2
+    - C3
+    - C4
+    - C5

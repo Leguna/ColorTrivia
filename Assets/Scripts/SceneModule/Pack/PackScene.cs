@@ -14,18 +14,20 @@ namespace SceneModule.Pack
         [SerializeField] private TMP_Text goldText;
         [SerializeField] private Button backButton;
         [SerializeField] private PackList _packList;
+        [SerializeField] private GameObject _popUpView;
 
         private void Start()
         {
-            _packList.SetCallback(OnPackSelect);
+            _packList.SetCallback(SelectPack,ShowPopup);
             backButton.onClick.RemoveAllListeners();
             backButton.onClick.AddListener(OnCloseButton);
             ChangeCoinText();
         }
 
-        private void OnPackSelect()
+        public void SelectPack(string packId)
         {
-            SceneManager.LoadScene(Consts.SceneNames.SelectLevel);
+            SaveData.Instance.SetPackSelectedId(packId);
+            SceneManager.LoadScene(Consts.SceneNames.Level);
         }
 
         private void OnCloseButton()
@@ -35,12 +37,12 @@ namespace SceneModule.Pack
 
         private void OnEnable()
         {
-            EventManager.StartListening(Consts.EventsName.OnBought, UpdateCoin);
+            EventManager.StartListening(Consts.EventsName.UnlockPack, UpdateCoin);
         }
 
         private void OnDisable()
         {
-            EventManager.StopListening(Consts.EventsName.OnBought, UpdateCoin);
+            EventManager.StopListening(Consts.EventsName.UnlockPack, UpdateCoin);
         }
 
         private void UpdateCoin(Dictionary<string, object> obj)
@@ -51,6 +53,11 @@ namespace SceneModule.Pack
         private void ChangeCoinText()
         {
             goldText.text = SaveData.Instance.gold.ToString();
+        }
+
+        private void ShowPopup()
+        {
+            _popUpView.SetActive(true);
         }
     }
 }

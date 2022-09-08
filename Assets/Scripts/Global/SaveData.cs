@@ -4,6 +4,7 @@ using System.Linq;
 using Global.Base;
 using UnityEngine;
 using Utilities;
+using Utilities.Event;
 
 namespace Global
 {
@@ -15,16 +16,40 @@ namespace Global
 
         public int gold;
         [NonSerialized] public Database database;
-        [HideInInspector] public BoughtPack boughtPack = new();
-        [HideInInspector] public CompletedLevel completedLevel = new();
-        [HideInInspector] public string packSelectedId;
-        [HideInInspector] public string levelDataSelectedId;
+        public BoughtPack boughtPack = new();
+        public CompletedLevel completedLevel = new();
+        public string PackSelectedId { get; private set; }
+        public string LevelDataSelectedId { get; private set; }
 
         protected override void Awake()
         {
             base.Awake();
             TryGetComponent(out database);
             Load();
+        }
+
+        public void SetPackSelectedId(string id)
+        {
+            PackSelectedId = id;
+            Save();
+        }
+
+        public void SetLevelDataSelectedId(string id)
+        {
+            LevelDataSelectedId = id;
+            Save();
+        }
+
+        private void OnEnable()
+        {
+            EventManager.StartListening(Consts.EventsName.UnlockPack, _ => Save());
+            EventManager.StartListening(Consts.EventsName.FinishLevel, _ => Save());
+        }
+
+        private void OnDisable()
+        {
+            EventManager.StopListening(Consts.EventsName.UnlockPack, _ => Save());
+            EventManager.StopListening(Consts.EventsName.FinishLevel, _ => Save());
         }
 
         public void Save()
@@ -60,7 +85,12 @@ namespace Global
 
         public bool IsAllLevelCompleted(LevelPack levelPack)
         {
-            return levelPack.listLevelDataIds.All(levelData => completedLevel.items.Contains(levelData));
+            return levelPack.listLevelDataIds.items.All(levelData => completedLevel.items.Contains(levelData));
+        }
+
+        public bool IsLevelCompleted(string dataLevelId)
+        {
+            return completedLevel.items.Contains(dataLevelId);
         }
     }
 }

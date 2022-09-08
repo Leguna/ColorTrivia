@@ -9,18 +9,16 @@ namespace Global.Base
         public string packId;
         public string packName;
         public int price = 100;
-        public List<string> listLevelDataIds;
+        public ListID listLevelDataIds = new();
 
-        public Dictionary<string, object> ToJson()
+        public Dictionary<string, object> ToDict()
         {
-            var data = JsonUtility.ToJson(this);
-            return new Dictionary<string, object>() { { "LevelPack", data } };
+            return new Dictionary<string, object>() { { "PackID", packId } };
         }
 
-        public static LevelPack FromJson(Dictionary<string, object> data)
+        public static string FromDict(Dictionary<string, object> data)
         {
-            var json = data["LevelPack"].ToString();
-            return JsonUtility.FromJson<LevelPack>(json);
+            return data["PackID"].ToString();
         }
     }
 }

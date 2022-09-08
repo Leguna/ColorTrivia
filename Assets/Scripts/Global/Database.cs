@@ -15,5 +15,10 @@ namespace Global
         {
             levelPacks = Resources.LoadAll<LevelPack>(Consts.Resources.LevelPackPath).ToList();
         }
+
+        public LevelPack GetLevelPackById(string id)
+        {
+            return levelPacks.FirstOrDefault(x => x.packId == id);
+        }
     }
 }

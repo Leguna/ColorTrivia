@@ -11,12 +11,14 @@ namespace SceneModule.Pack
     {
         [SerializeField] private Transform _levelGroupTransform;
         private readonly PackUnlock _packUnlock = new();
-        private Action _onPackSelect;
+        private Action<string> _onPackSelect;
         private List<PackData> _packData = new();
+        private Action _showPopup;
 
-        public void SetCallback(Action onPackSelect)
+        public void SetCallback(Action<string> onPackSelect, Action showPopup)
         {
             _onPackSelect = onPackSelect;
+            _showPopup = showPopup;
         }
 
         private void Start()
@@ -39,9 +41,7 @@ namespace SceneModule.Pack
 
         private void OnPackClick(LevelPack obj)
         {
-            SaveData.Instance.packSelectedId = obj.packId;
-            SaveData.Instance.Save();
-            _onPackSelect?.Invoke();
+            _onPackSelect?.Invoke(obj.packId);
         }
 
         private void OnBuyClick(LevelPack obj)
@@ -50,6 +50,10 @@ namespace SceneModule.Pack
             if (isSuccess)
             {
                 UpdateView();
+            }
+            else
+            {
+                _showPopup?.Invoke();
             }
         }
 

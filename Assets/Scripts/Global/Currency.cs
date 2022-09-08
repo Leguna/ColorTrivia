@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Global.Base;
+using SceneModule.Level;
 using UnityEngine;
 using Utilities;
 using Utilities.Event;
@@ -17,7 +18,18 @@ namespace Global
             saveData = SaveData.Instance;
         }
 
-        public int AddGold(int amount)
+        private void OnEnable()
+        {
+            EventManager.StartListening(Consts.EventsName.FinishLevel, obj => AddCurrency(obj));
+        }
+
+        private void AddCurrency(Dictionary<string, object> dictionary)
+        {
+            var levelData = LevelDataModel.FromDict(dictionary);
+            if (saveData.completedLevel.items.Contains(levelData.levelId)) AddCoin(20);
+        }
+
+        public int AddCoin(int amount)
         {
             saveData.gold += amount;
             saveData.Save();
@@ -46,7 +58,6 @@ namespace Global
                 return false;
             }
 
-            EventManager.TriggerEvent(Consts.EventsName.OnBought, levelPack.ToJson());
             SpendCoin(price);
             saveData.boughtPack.items.Add(levelPack.packId);
             saveData.Save();

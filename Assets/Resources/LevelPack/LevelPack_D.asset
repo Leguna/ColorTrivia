@@ -16,8 +16,9 @@ MonoBehaviour:
   packName: Level Pack D
   price: 100
   listLevelDataIds:
-  - D1
-  - D2
-  - D3
-  - D4
-  - D5
+    items:
+    - D1
+    - D2
+    - D3
+    - D4
+    - D5

@@ -88,8 +88,9 @@ GameObject:
   - component: {fileID: 8091235897812741919}
   - component: {fileID: 8091235897812741918}
   - component: {fileID: 8091235897812741917}
+  - component: {fileID: 8141349479724311071}
   m_Layer: 5
-  m_Name: LevelItem
+  m_Name: LevelDataView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,6 +200,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8141349479724311071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091235897812741915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e3e8c1c113405284355c0aa5ae109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelNameLabel: {fileID: 8091235899127671024}
+  _completeImage: {fileID: 8091235898249687255}
+  _selectButton: {fileID: 8091235897812741917}
 --- !u!1 &8091235898249687254
 GameObject:
   m_ObjectHideFlags: 0

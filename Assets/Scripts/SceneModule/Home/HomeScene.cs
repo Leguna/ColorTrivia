@@ -17,12 +17,12 @@ namespace SceneModule.Home
         private void Init()
         {
             _playButton.onClick.RemoveAllListeners();
-            _playButton.onClick.AddListener(GoToSelectPack);
+            _playButton.onClick.AddListener(StartPlay);
         }
 
-        private void GoToSelectPack()
+        public void StartPlay()
         {
-            SceneManager.LoadScene(Consts.SceneNames.SelectPack);
+            SceneManager.LoadScene(Consts.SceneNames.Pack);
         }
     }
 }

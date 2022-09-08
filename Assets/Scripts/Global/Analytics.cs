@@ -14,25 +14,24 @@ namespace Global
 
         private void Init()
         {
-            EventManager.StartListening(Consts.EventsName.OnBought, OnPlayerBoughtPack);
-            EventManager.StartListening(Consts.EventsName.OnFinish, OnPlayerFinishLevel);
+            EventManager.StartListening(Consts.EventsName.UnlockPack, TrackUnlockPack);
+            EventManager.StartListening(Consts.EventsName.FinishLevel, TrackFinishLevel);
         }
-
 
         private void OnDisable()
         {
-            EventManager.StopListening(Consts.EventsName.OnBought, OnPlayerBoughtPack);
-            EventManager.StopListening(Consts.EventsName.OnFinish, OnPlayerFinishLevel);
+            EventManager.StopListening(Consts.EventsName.UnlockPack, TrackUnlockPack);
+            EventManager.StopListening(Consts.EventsName.FinishLevel, TrackFinishLevel);
         }
 
-        private void OnPlayerFinishLevel(Dictionary<string, object> obj)
+        private void TrackFinishLevel(Dictionary<string, object> obj)
         {
-            SendDataAnalytics("OnFinish", obj.ToString());
+            SendDataAnalytics("On Finish Level", obj.ToString());
         }
 
-        private void OnPlayerBoughtPack(Dictionary<string, object> obj)
+        private void TrackUnlockPack(Dictionary<string, object> obj)
         {
-            SendDataAnalytics("OnBought", obj.ToString());
+            SendDataAnalytics("On Unlock Pack", LevelPack.FromDict(obj));
         }
 
         private void SendDataAnalytics(string key, string data)
