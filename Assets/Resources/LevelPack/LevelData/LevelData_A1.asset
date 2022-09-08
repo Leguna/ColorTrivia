@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8f30cecd7643b089ef0269f157b620, type: 3}
   m_Name: LevelData_A1
   m_EditorClassIdentifier: 
-  name: 
-  questionText: 
+  levelId: A1
+  name: Halo
+  questionText: Ini Apa?
   imageHint: {fileID: 0}
   answers: []
   answerIndex: 0

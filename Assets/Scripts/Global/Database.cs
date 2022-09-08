@@ -7,8 +7,13 @@ using UnityEngine;
 namespace Global
 {
     [Serializable]
-    public class LevelPackDatabase
+    public class Database : MonoBehaviour
     {
         public List<LevelPack> levelPacks;
+
+        private void Awake()
+        {
+            levelPacks = Resources.LoadAll<LevelPack>(Consts.Resources.LevelPackPath).ToList();
+        }
     }
 }

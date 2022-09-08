@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Global.Base;
 
-namespace Global
+namespace Global.Base
 {
     [Serializable]
     public class CompletedLevel
     {
-        public List<LevelData> items = new();
+        public List<string> items = new();
     }
 }

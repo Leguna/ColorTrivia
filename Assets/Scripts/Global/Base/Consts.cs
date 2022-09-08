@@ -5,8 +5,8 @@
         public static class SceneNames
         {
             public const string Home = "Home";
-            public const string SelectPack = "SelectPack";
-            public const string SelectLevel = "SelectLevel";
+            public const string SelectPack = "Pack";
+            public const string SelectLevel = "Level";
             public const string GameScene = "Gameplay";
         }
 
@@ -20,7 +20,7 @@
         {
             public const string FirstLevelPack = "LevelPack/LevelPack_A";
             public const string LevelPackPath = "LevelPack/";
-            public const string LevelPackItemPrefab = "Prefabs/LevelPackItem";
+            public const string LevelPackItemPrefab = "Prefabs/PackItem";
         }
 
         public static class EventsName

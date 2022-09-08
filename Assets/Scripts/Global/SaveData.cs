@@ -14,17 +14,16 @@ namespace Global
         private string _databaseKey = $"PlayerData_{VersionNumber}";
 
         public int gold;
-
-        [HideInInspector] public LevelPackDatabase levelPackDatabase = new();
-        public BoughtPack boughtPack = new();
-        public CompletedLevel completedLevel = new();
-        [HideInInspector] public LevelPack packSelected;
-        [HideInInspector] public LevelData levelDataSelected;
+        [NonSerialized] public Database database;
+        [HideInInspector] public BoughtPack boughtPack = new();
+        [HideInInspector] public CompletedLevel completedLevel = new();
+        [HideInInspector] public string packSelectedId;
+        [HideInInspector] public string levelDataSelectedId;
 
         protected override void Awake()
         {
             base.Awake();
-            levelPackDatabase.levelPacks = Resources.LoadAll<LevelPack>(Consts.Resources.LevelPackPath).ToList();
+            TryGetComponent(out database);
             Load();
         }
 
@@ -47,7 +46,7 @@ namespace Global
                 Resources.Load<LevelPack>(Consts.Resources.FirstLevelPack);
                 gold = 0;
                 boughtPack = new BoughtPack
-                    { items = new List<LevelPack> { Resources.Load<LevelPack>(Consts.Resources.FirstLevelPack) } };
+                    { items = new List<string> { Resources.Load<LevelPack>(Consts.Resources.FirstLevelPack).packId } };
                 Save();
             }
 
@@ -56,12 +55,12 @@ namespace Global
 
         public bool IsAlreadyBoughtPack(LevelPack levelPack)
         {
-            return boughtPack.items.Contains(levelPack);
+            return boughtPack.items.Contains(levelPack.packId);
         }
 
         public bool IsAllLevelCompleted(LevelPack levelPack)
         {
-            return levelPack.listLevelData.All(levelData => completedLevel.items.Contains(levelData));
+            return levelPack.listLevelDataIds.All(levelData => completedLevel.items.Contains(levelData));
         }
     }
 }

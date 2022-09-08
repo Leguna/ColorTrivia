@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 8294873988624044158}
   - component: {fileID: 8294873988624044097}
   - component: {fileID: 8294873988624044096}
+  - component: {fileID: 5821223354803860604}
   - component: {fileID: 8294873988624044159}
+  - component: {fileID: 1505634661}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -59,12 +61,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c37859e98ce4b1cbae4f61308b5cad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 0
-  levelPackDatabase:
-    levelPacks: []
+  gold: 100
   boughtPack:
-    items:
-    - {fileID: 11400000, guid: 7d86673aee845d94ea54e335a1955f57, type: 2}
+    items: []
+  completedLevel:
+    items: []
+  packSelectedId: 
+  levelDataSelectedId: 
 --- !u!114 &8294873988624044096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +80,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997266bbeb75dc44c97ecd27edba75ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5821223354803860604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294873988624044098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c01b275b934d3bbd262f1e1e0f8754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelPacks: []
 --- !u!114 &8294873988624044159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,3 +105,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c5604f518ec48aab147ff57df3e9c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1505634661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294873988624044098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1f6ba0c1384c56b1d8533b27d80fcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveData: {fileID: 8294873988624044097}

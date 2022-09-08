@@ -9,6 +9,7 @@ namespace Scene.GameplayScene
     {
         private float _time = Consts.GameConstant.Timer;
         [SerializeField] private TMP_Text _timerText;
+
         private float _currentTime;
         private Action _onTimerFinish;
         private bool _isCounting = true;

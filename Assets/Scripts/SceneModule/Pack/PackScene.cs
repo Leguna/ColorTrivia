@@ -7,17 +7,17 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Utilities.Event;
 
-namespace SceneModule.SelectPack
+namespace SceneModule.Pack
 {
-    public class SelectPackScene : MonoBehaviour
+    public class PackScene : MonoBehaviour
     {
         [SerializeField] private TMP_Text goldText;
         [SerializeField] private Button backButton;
-        [SerializeField] private LevelSelection levelSelection;
+        [SerializeField] private PackList _packList;
 
         private void Start()
         {
-            levelSelection.SetCallback(OnPackSelect);
+            _packList.SetCallback(OnPackSelect);
             backButton.onClick.RemoveAllListeners();
             backButton.onClick.AddListener(OnCloseButton);
             ChangeCoinText();

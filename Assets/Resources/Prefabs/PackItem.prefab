@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 457859677002732456}
   - component: {fileID: 3591844391131067660}
   m_Layer: 5
-  m_Name: LevelPackItem
+  m_Name: PackItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,7 +674,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457859677002732462}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -688,7 +688,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: -26.16595}
-  m_SizeDelta: {x: 213.9249, y: 52.3319}
+  m_SizeDelta: {x: 250, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &457859677002732458
 CanvasRenderer:
@@ -786,8 +786,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelPackName: {fileID: 457859676233126981}
   _checkMark: {fileID: 457859677371419747}
-  _lockParent: {fileID: 457859676421009588}
-  _packPrice: {fileID: 0}
+  _lockParent: {fileID: 457859676913818893}
+  _packPrice: {fileID: 457859676421009590}
+  _packButton: {fileID: 457859677002732456}
+  _buyButton: {fileID: 457859675909523003}
 --- !u!1 &457859677086438015
 GameObject:
   m_ObjectHideFlags: 0

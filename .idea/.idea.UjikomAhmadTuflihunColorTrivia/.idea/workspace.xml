@@ -1,16 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64f08488-d93a-40a2-9645-e29a528000bc" name="Changes" comment="" />
+    <list default="true" id="64f08488-d93a-40a2-9645-e29a528000bc" name="Changes" comment="Import utilities">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/CompletedLevel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/CompletedLevel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Database.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Database.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackUnlock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackUnlock.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelData/LevelData_A1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelData/LevelData_A1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelData/LevelData_A1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelData/LevelData_A1.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_A.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_A.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_B.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_B.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_C.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_C.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_D.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/GameManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPackItem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LevelPackItem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SelectLevel.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SelectLevel.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SelectPack.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SelectPack.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Base/BoughtPack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/BoughtPack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Base/Consts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/Consts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelPack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelPack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/CompletedLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/CompletedLevel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Currency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/LevelPackDatabase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/LevelPackDatabase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Countdown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Countdown.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/LevelPackItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/LevelPackItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/LevelSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/LevelSelection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/SelectPackScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/SelectPack/SelectPackScene.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Pack/PackScene.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Global/Database.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ESjKFShLkASU8632KlS7AyXuih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -23,6 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6632">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="6632" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -64,16 +122,78 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662595819988</updated>
-      <workItem from="1662595821162" duration="28000" />
+      <workItem from="1662595821162" duration="5570000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1662595956368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662595956368</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Import utilities">
+      <created>1662596038884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662596038884</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Import utilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import utilities" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs</url>
+          <line>33</line>
+          <properties documentPath="D:\Proyek\Unity\UjikomAhmadTuflihunColorTrivia\Assets\Scripts\Global\SaveData.cs" initialLine="33" containingFunctionPresentation="method 'Save'">
+            <startOffsets>
+              <option value="995" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1014" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs</url>
+          <line>32</line>
+          <properties documentPath="D:\Proyek\Unity\UjikomAhmadTuflihunColorTrivia\Assets\Scripts\Global\SaveData.cs" initialLine="32" containingFunctionPresentation="method 'Save'">
+            <startOffsets>
+              <option value="930" />
+            </startOffsets>
+            <endOffsets>
+              <option value="982" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

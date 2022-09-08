@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb48136055244893b1c45e851940c001, type: 3}
   m_Name: LevelPack_B
   m_EditorClassIdentifier: 
+  packId: B
   packName: Level Pack B
-  question: {fileID: 0}
+  price: 100
+  listLevelDataIds:
+  - B1
+  - B2
+  - B3
+  - B4
+  - B5

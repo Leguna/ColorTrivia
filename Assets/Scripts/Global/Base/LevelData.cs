@@ -6,6 +6,7 @@ namespace Global.Base
     [CreateAssetMenu(fileName = "LevelData_", menuName = "LevelData")]
     public class LevelData : ScriptableObject
     {
+        public string levelId;
         public new string name = "";
         public string questionText;
         public Texture2D imageHint;
