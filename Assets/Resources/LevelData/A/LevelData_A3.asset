@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelId: A3
   name: A-3
-  questionText: Ini Apa?
-  imageHint: {fileID: 0}
-  answers: []
-  answerIndex: 0
+  questionText: Warna dari Daun ?
+  imageHint: {fileID: 21300000, guid: 8a3fdd3e8e50ff342881b58d623d79b1, type: 3}
+  answers:
+  - Merah
+  - Biru
+  - Hijau
+  - Kuning
+  answerIndex: 2
   isCompleted: 0

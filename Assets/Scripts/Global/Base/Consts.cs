@@ -1,4 +1,7 @@
-﻿namespace Global.Base
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+namespace Global.Base
 {
     internal static class Consts
     {
@@ -23,6 +26,7 @@
             public const string LevelPackItemPrefab = "Prefabs/PackItem";
             public const string LevelData = "LevelData/";
             public const string LevelDataView = "Prefabs/LevelDataView";
+            public const string AnswerButton = "Prefabs/AnswerItem";
         }
 
         public static class EventsName
@@ -30,6 +34,17 @@
             public const string UnlockPack = "OnBought";
             public const string FinishLevel = "OnFinish";
             public const string TimeOver = "TimeOver";
+        }
+
+        public class BaseColors
+        {
+            public static List<Color> colors = new()
+            {
+                Color.red,
+                Color.blue,
+                Color.green,
+                Color.yellow
+            };
         }
     }
 }

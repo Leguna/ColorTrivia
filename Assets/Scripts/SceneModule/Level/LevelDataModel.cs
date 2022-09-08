@@ -10,8 +10,8 @@ namespace SceneModule.Level
         public string levelId;
         public new string name = "";
         public string questionText;
-        public Texture2D imageHint;
-        public List<Answer> answers;
+        public Sprite imageHint;
+        public List<string> answers;
         public int answerIndex;
         public bool isCompleted;
 
@@ -20,10 +20,9 @@ namespace SceneModule.Level
             return new Dictionary<string, object> { { "LevelID", levelId } };
         }
 
-        public static LevelDataModel FromDict(Dictionary<string, object> data)
+        public static string FromDict(Dictionary<string, object> data)
         {
-            var levelId = data["LevelID"].ToString();
-            return JsonUtility.FromJson<LevelDataModel>(levelId);
+            return data["LevelID"].ToString();
         }
     }
 }

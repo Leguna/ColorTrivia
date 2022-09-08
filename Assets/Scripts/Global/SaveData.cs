@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Global.Base;
+using SceneModule.Level;
 using UnityEngine;
 using Utilities;
 using Utilities.Event;
@@ -91,6 +92,11 @@ namespace Global
         public bool IsLevelCompleted(string dataLevelId)
         {
             return completedLevel.items.Contains(dataLevelId);
+        }
+
+        public LevelDataModel GetCurrentLevelData()
+        {
+            return database.GetLevelDataModelById(LevelDataSelectedId??"A1");
         }
     }
 }
