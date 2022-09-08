@@ -13,7 +13,7 @@ namespace Global
         public List<LevelPack> levelPacks;
         public List<LevelDataModel> levelDataModels;
 
-        private void Awake()
+        private void Start()
         {
             levelPacks = Resources.LoadAll<LevelPack>(Consts.Resources.LevelPackPath).ToList();
             levelDataModels = Resources.LoadAll<LevelDataModel>(Consts.Resources.LevelData).ToList();
@@ -28,5 +28,6 @@ namespace Global
         {
             return levelDataModels.FirstOrDefault(x => x.levelId == id);
         }
+
     }
 }

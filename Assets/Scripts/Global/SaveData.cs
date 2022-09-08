@@ -16,16 +16,18 @@ namespace Global
         private string _databaseKey = $"PlayerData_{VersionNumber}";
 
         public int gold;
-        [NonSerialized] public Database database;
+        public Database database;
         public BoughtPack boughtPack = new();
         public CompletedLevel completedLevel = new();
-        public string PackSelectedId { get; private set; }
-        public string LevelDataSelectedId { get; private set; }
+        [SerializeField] private Currency _currency;
+        public string PackSelectedId { get; private set; } = "A";
+        public string LevelDataSelectedId { get; private set; } = "A1";
 
         protected override void Awake()
         {
             base.Awake();
             TryGetComponent(out database);
+            TryGetComponent(out _currency);
             Load();
         }
 
@@ -44,7 +46,11 @@ namespace Global
         private void OnEnable()
         {
             EventManager.StartListening(Consts.EventsName.UnlockPack, _ => Save());
-            EventManager.StartListening(Consts.EventsName.FinishLevel, _ => Save());
+            EventManager.StartListening(Consts.EventsName.FinishLevel, _ =>
+            {
+                LevelUnlock();
+                Save();
+            });
         }
 
         private void OnDisable()
@@ -73,6 +79,8 @@ namespace Global
                 gold = 0;
                 boughtPack = new BoughtPack
                     { items = new List<string> { Resources.Load<LevelPack>(Consts.Resources.FirstLevelPack).packId } };
+                PackSelectedId = "A";
+                LevelDataSelectedId = "A1";
                 Save();
             }
 
@@ -89,6 +97,13 @@ namespace Global
             return levelPack.listLevelDataIds.items.All(levelData => completedLevel.items.Contains(levelData));
         }
 
+        public bool IsAllLevelCompleted()
+        {
+            return database.GetLevelPackById(PackSelectedId ?? "A").listLevelDataIds.items
+                .All(levelData => completedLevel.items.Contains(levelData));
+        }
+
+
         public bool IsLevelCompleted(string dataLevelId)
         {
             return completedLevel.items.Contains(dataLevelId);
@@ -96,7 +111,34 @@ namespace Global
 
         public LevelDataModel GetCurrentLevelData()
         {
-            return database.GetLevelDataModelById(LevelDataSelectedId??"A1");
+            return database.GetLevelDataModelById(LevelDataSelectedId ?? "A1");
+        }
+
+        public void LevelUnlock()
+        {
+            if (completedLevel.items.Contains(LevelDataSelectedId)) return;
+            _currency.AddCurrency(database.GetLevelDataModelById(LevelDataSelectedId).ToDict());
+            completedLevel.items.Add(LevelDataSelectedId);
+            Save();
+        }
+
+        public void NextLevel()
+        {
+            var pack = database.GetLevelPackById(PackSelectedId);
+            var indexLevel = pack.listLevelDataIds.items.IndexOf(LevelDataSelectedId);
+            if (indexLevel + 1 < pack.listLevelDataIds.items.Count)
+            {
+                LevelDataSelectedId = pack.listLevelDataIds.items[indexLevel + 1];
+            }
+            else
+            {
+                foreach (var item in pack.listLevelDataIds.items)
+                {
+                    if (completedLevel.items.Contains(item)) continue;
+                    LevelDataSelectedId = item;
+                    break;
+                }
+            }
         }
     }
 }

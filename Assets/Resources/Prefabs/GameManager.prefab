@@ -62,12 +62,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gold: 100
+  database: {fileID: 5821223354803860604}
   boughtPack:
     items: []
   completedLevel:
     items: []
-  packSelectedId: 
-  levelDataSelectedId: 
+  _currency: {fileID: 1505634661}
 --- !u!114 &8294873988624044096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelPacks: []
+  levelDataModels: []
 --- !u!114 &8294873988624044159
 MonoBehaviour:
   m_ObjectHideFlags: 0

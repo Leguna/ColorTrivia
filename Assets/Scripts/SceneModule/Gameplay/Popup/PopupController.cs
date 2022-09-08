@@ -8,7 +8,6 @@ namespace SceneModule.Gameplay.Popup
     public class PopupController : MonoBehaviour
     {
         [SerializeField] private TMP_Text _title;
-        [SerializeField] private TMP_Text _desc;
         [SerializeField] private Button _popUpButton;
 
         private Action _onPopupClose;
@@ -23,11 +22,10 @@ namespace SceneModule.Gameplay.Popup
             });
         }
 
-        public void Show(string title, string desc)
+        public void Show(string title)
         {
             gameObject.SetActive(true);
             _title.text = title;
-            _desc.text = desc;
         }
 
 

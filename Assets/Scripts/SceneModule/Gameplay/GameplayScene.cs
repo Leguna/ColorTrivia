@@ -1,3 +1,4 @@
+using Global;
 using Global.Base;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,7 +15,26 @@ namespace SceneModule.Gameplay
         {
             _backButton.onClick.RemoveAllListeners();
             _backButton.onClick.AddListener(GoToLevelScene);
-            _gameFlowController.SetCallback(GoToLevelScene, GoToPackScene);
+            _gameFlowController.SetCallback(GoToLevelScene, GoToNextLevelScene);
+        }
+
+        private void GoToNextLevelScene()
+        {
+            var isAllLevelCompleted = SaveData.Instance.IsAllLevelCompleted();
+            if (isAllLevelCompleted)
+            {
+                GoToPackScene();
+            }
+            else
+            {
+                SaveData.Instance.NextLevel();
+                ReloadScene();
+            }
+        }
+
+        private void ReloadScene()
+        {
+            SceneManager.LoadScene(Consts.SceneNames.Gameplay);
         }
 
         public void GoToLevelScene()

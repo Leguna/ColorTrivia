@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SceneModule.Gameplay.Quiz
+namespace Global.Base
 {
     public struct LevelStruct
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using Global.Base;
 using UnityEngine;
 
 namespace SceneModule.Gameplay.Quiz

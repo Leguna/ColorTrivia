@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Global.Base;
+using SceneModule.Level;
 using UnityEngine;
 using Utilities.Event;
 
@@ -26,7 +27,7 @@ namespace Global
 
         private void TrackFinishLevel(Dictionary<string, object> obj)
         {
-            SendDataAnalytics("On Finish Level", obj.ToString());
+            SendDataAnalytics("On Finish Level", LevelDataModel.FromDict(obj));
         }
 
         private void TrackUnlockPack(Dictionary<string, object> obj)
