@@ -8,7 +8,6 @@ using Utilities.Event;
 
 namespace Global
 {
-    [Serializable]
     public class Currency : SingletonMonoBehaviour<Currency>
     {
         public SaveData saveData;

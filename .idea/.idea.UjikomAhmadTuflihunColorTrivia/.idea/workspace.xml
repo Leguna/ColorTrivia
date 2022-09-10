@@ -2,50 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64f08488-d93a-40a2-9645-e29a528000bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/C/LevelData_C5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/D/LevelData_D5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_E.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_E.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UjikomAhmadTuflihunColorTrivia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/B/LevelData_B5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Analytics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Analytics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelData/A/LevelData_A1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelData/A/LevelData_A1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_B.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_B.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/LevelPack/LevelPack_D.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Base/Consts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/Consts.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Currency.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Database.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/SaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameFlowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameFlowController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameplayScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/GameplayScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Popup/PopupController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Popup/PopupController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Quiz/LevelStruct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelStruct.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Quiz/LevelStruct.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/Base/LevelStruct.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Quiz/QuizController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneModule/Gameplay/Quiz/QuizController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,10 +110,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="30608">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="30608" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -165,7 +131,11 @@
       <updated>1662595819988</updated>
       <workItem from="1662595821162" duration="14327000" />
       <workItem from="1662612193903" duration="12188000" />
-      <workItem from="1662624802540" duration="2749000" />
+      <workItem from="1662624802540" duration="3489000" />
+      <workItem from="1662700322796" duration="664000" />
+      <workItem from="1662704776025" duration="2621000" />
+      <workItem from="1662799550041" duration="737000" />
+      <workItem from="1662802259630" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1662595956368</created>
@@ -202,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662621430928</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finish?">
+      <created>1662627574996</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662627574996</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +207,7 @@
     <MESSAGE value="Level pack select complete" />
     <MESSAGE value="Update level select" />
     <MESSAGE value="Gameplay show button and set model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gameplay show button and set model" />
+    <MESSAGE value="Finish?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish?" />
   </component>
 </project>

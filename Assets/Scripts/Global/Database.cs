@@ -7,7 +7,6 @@ using UnityEngine;
 
 namespace Global
 {
-    [Serializable]
     public class Database : MonoBehaviour
     {
         public List<LevelPack> levelPacks;

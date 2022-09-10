@@ -43,7 +43,10 @@ namespace Global.Base
                 Color.red,
                 Color.blue,
                 Color.green,
-                Color.yellow
+                Color.yellow,
+                Color.magenta,
+                Color.green,
+                Color.red
             };
         }
     }
